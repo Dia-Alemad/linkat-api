@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   links.init({
     userId: DataTypes.INTEGER,
-    typeId: DataTypes.INTEGER,
+    linkTypeId: DataTypes.INTEGER,
     url: DataTypes.STRING,
     isPrivate: DataTypes.BOOLEAN,
     order: DataTypes.INTEGER,

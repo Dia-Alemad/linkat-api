@@ -8,6 +8,15 @@ const userTransformer = (user) => {
     return user
 }
 
+
+const linkTransformer = (link) => {
+    delete link['dataValues']['deletedAt']
+    delete link['dataValues']['createdAt']
+    delete link['dataValues']['updatedAt']
+    return link
+}
+
 module.exports = {
-    userTransformer
+    userTransformer,
+    linkTransformer
 }
